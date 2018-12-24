@@ -1,0 +1,59 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1545640140462" stop="1545640140537">
+  <name>test_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1545640140462" status="passed" stop="1545640140478">
+      <name>TestLogin.test_a</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="11952-MainThread"/>
+        <label name="host" value="zxl-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1545640140477" status="passed" stop="1545640140478">
+          <name>这是测试步骤一</name>
+          <title>这是测试步骤一</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1545640140481" status="failed" stop="1545640140537">
+      <name>TestLogin.test_b</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test_login.TestLogin object at 0x0000000004263160&gt;
+
+    @allure.step("这是测试步骤二")
+    def test_b(self):
+        print("\n2222")
+        allure.attach("描述1","判断失败")
+&gt;       assert 0
+E       assert 0
+
+script\test_login.py:15: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="11952-MainThread"/>
+        <label name="host" value="zxl-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1545640140484" status="failed" stop="1545640140487">
+          <name>这是测试步骤二</name>
+          <title>这是测试步骤二</title>
+          <attachments>
+            <attachment source="653a57ac-eb34-48a6-978b-22796a74c330-attachment.txt" title="描述1" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
